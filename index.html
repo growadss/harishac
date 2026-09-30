@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Harish Trading Academy | Free Learning Channel</title>
-<meta name="description" content="Learn stock market basics in Kannada & English with Harish Trading Academy's free channel. Educational content only.">
-<meta name="theme-color" content="#17212b">
+<meta name="description" content="Learn stock market basics in Kannada & English. Educational content only.">
+<meta name="theme-color" content="#0e1621">
 
 <!-- Meta Pixel Code -->
 <script>
@@ -26,207 +26,98 @@ src="https://www.facebook.com/tr?id=1097986969393824&ev=PageView&noscript=1"
 <!-- End Meta Pixel Code -->
 
 <style>
-  :root{
-    --app:#0e1621; --bar:#17212b; --in:#182533; --out:#2b5278; --text:#e9eef4; --muted:#7f91a4;
-    --blue:#3a9fe8; --blue2:#2b8ad1; --green:#22c55e; --red:#ef4444; --warn:#fbbf24;
-  }
+  :root{--bg:#0e1621;--card:#17212b;--line:#24344a;--text:#e9eef4;--muted:#8b9bb0;--blue:#3a9fe8;--blue2:#2b8ad1;--green:#22c55e;--warn:#fbbf24}
   *{box-sizing:border-box;margin:0;padding:0}
-  body{
-    font-family:"Noto Sans Kannada","Tunga",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-    background:#070b12;color:var(--text);line-height:1.5;-webkit-font-smoothing:antialiased;
-    min-height:100vh;display:flex;justify-content:center;align-items:flex-start;padding:28px 12px;
-    background-image:radial-gradient(700px 400px at 50% 0,rgba(58,159,232,.18),transparent);
-  }
-  .en{display:block;color:var(--muted);font-size:.88em;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+  body{font-family:"Noto Sans Kannada","Tunga",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+       background:var(--bg);color:var(--text);line-height:1.55;-webkit-font-smoothing:antialiased;
+       min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px 16px;
+       background-image:radial-gradient(600px 350px at 50% 0,rgba(58,159,232,.2),transparent);background-repeat:no-repeat}
+  .en{display:block;color:var(--muted);font-size:.85em;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
 
-  /* ===== PHONE FRAME ===== */
-  .phone{width:100%;max-width:400px;background:#000;border-radius:46px;padding:11px;position:relative;
-         box-shadow:0 40px 80px rgba(0,0,0,.6),0 0 0 2px #2a3650,0 0 0 8px rgba(255,255,255,.03)}
-  .island{position:absolute;top:20px;left:50%;transform:translateX(-50%);width:100px;height:26px;background:#000;border-radius:20px;z-index:5}
-  .screen{background:var(--app);border-radius:36px;overflow:hidden;
-          background-image:radial-gradient(circle at 15% 20%,rgba(58,159,232,.08),transparent 40%),radial-gradient(circle at 85% 70%,rgba(34,197,94,.06),transparent 40%)}
+  .card{width:100%;max-width:420px;background:var(--card);border:1px solid var(--line);border-radius:22px;
+        padding:26px 20px;text-align:center;box-shadow:0 24px 60px rgba(0,0,0,.45)}
 
-  /* Status bar + app header */
-  .status{display:flex;justify-content:space-between;padding:14px 26px 6px;font-size:13px;font-weight:700;background:var(--bar);font-family:sans-serif}
-  .status span:last-child{letter-spacing:2px}
-  .head{display:flex;align-items:center;gap:10px;padding:8px 14px 12px;background:var(--bar);border-bottom:1px solid #0b1118}
-  .back{color:var(--blue);font-size:22px;line-height:1}
-  .av{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--green),var(--blue));
-      display:grid;place-items:center;font-weight:800;font-size:13px;color:#fff;flex:0 0 auto;font-family:sans-serif}
-  .av{position:relative;overflow:hidden}
-  .av img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:50%}
-  .head b{display:block;font-size:15px;font-family:sans-serif}
-  .head small{font-size:12px;color:var(--muted)}
+  .logo{width:84px;height:84px;margin:0 auto 12px;border-radius:50%;position:relative;overflow:hidden;
+        background:linear-gradient(135deg,var(--green),var(--blue));display:grid;place-items:center;
+        font-weight:800;font-size:24px;color:#fff;box-shadow:0 0 0 4px rgba(58,159,232,.22);font-family:sans-serif}
+  .logo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .brand{font-weight:800;font-size:15px;font-family:sans-serif}
+  .tag{display:inline-block;margin:10px 0 16px;font-size:12px;font-weight:700;color:var(--green);
+       background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.3);padding:4px 11px;border-radius:999px}
 
-  .chat{padding:14px 10px 6px;display:flex;flex-direction:column;gap:8px}
-  .day{align-self:center;background:rgba(0,0,0,.35);color:#cfd8e3;font-size:12px;padding:3px 10px;border-radius:10px;margin:4px 0;font-family:sans-serif}
+  h1{font-size:22px;line-height:1.35}
+  h1 .en{font-size:15px;color:#cfd8e3;margin-top:3px;font-weight:700}
+  .sub{margin-top:10px;font-size:14px;color:#cfd8e3}
+  .sub .en{font-size:13px;margin-top:3px}
 
-  /* ===== PINNED JOIN CARD ===== */
-  .pin{background:var(--in);border-radius:18px;padding:20px 16px;text-align:center;border:1px solid rgba(58,159,232,.25);animation:pop .5s both}
-  .pin .big{width:78px;height:78px;margin:0 auto 10px;font-size:24px;box-shadow:0 0 0 4px rgba(58,159,232,.2)}
-  .pin h1{font-size:19px;line-height:1.35}
-  .pin h1 .en{font-size:14px;color:#cfd8e3;margin-top:2px}
-  .tag{display:inline-block;margin:10px 0 12px;font-size:12px;font-weight:700;color:var(--green);
-       background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.3);padding:4px 10px;border-radius:999px}
-  .pin p{font-size:14px;color:#cfd8e3}
-  .pin p .en{font-size:13px;margin-top:3px}
+  .points{list-style:none;text-align:left;display:grid;gap:9px;margin:18px 0 4px}
+  .points li{display:flex;gap:10px;background:rgba(0,0,0,.18);border:1px solid var(--line);border-radius:12px;padding:10px 12px;font-size:14px}
+  .points li i{font-style:normal}
+  .points .en{font-size:12.5px}
 
-  .cta{display:flex;flex-direction:column;align-items:center;width:100%;margin-top:16px;background:var(--blue);color:#fff;
-       text-decoration:none;border-radius:12px;padding:13px;font-weight:800;font-size:17px;
+  .cta{display:flex;flex-direction:column;align-items:center;width:100%;margin-top:18px;background:var(--blue);color:#fff;
+       text-decoration:none;border-radius:14px;padding:14px;font-weight:800;font-size:18px;
        box-shadow:0 8px 22px rgba(58,159,232,.4);animation:pulse 2s infinite;transition:transform .15s}
   .cta:active{transform:scale(.97)} .cta:hover{background:var(--blue2)}
-  .cta small{font-size:12px;opacity:.9;font-family:sans-serif;letter-spacing:.5px}
+  .cta small{font-size:12px;opacity:.9;letter-spacing:.5px;font-family:sans-serif}
   @keyframes pulse{0%,100%{box-shadow:0 8px 22px rgba(58,159,232,.35)}50%{box-shadow:0 8px 34px rgba(58,159,232,.8)}}
 
-  /* Timer ring */
   .timer{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:14px;font-size:13px;color:#cfd8e3;text-align:left}
-  .ring{width:44px;height:44px;position:relative;flex:0 0 auto}
+  .ring{width:42px;height:42px;position:relative;flex:0 0 auto}
   .ring svg{transform:rotate(-90deg)}
-  .ring .bg{stroke:#24344a}
-  .ring .fg{stroke:var(--warn);stroke-linecap:round;transition:stroke-dashoffset 1s linear}
-  .ring b{position:absolute;inset:0;display:grid;place-items:center;font-size:16px;color:var(--warn);font-family:sans-serif}
-  .free{margin-top:10px;font-size:12px;color:var(--muted);font-family:sans-serif}
+  .ring .bg{stroke:#24344a} .ring .fg{stroke:var(--warn);stroke-linecap:round;transition:stroke-dashoffset 1s linear}
+  .ring b{position:absolute;inset:0;display:grid;place-items:center;font-size:15px;color:var(--warn);font-family:sans-serif}
+  .free{margin-top:8px;font-size:12px;color:var(--muted);font-family:sans-serif}
 
-  /* ===== MESSAGES ===== */
-  .msg{max-width:88%;padding:9px 11px 6px;border-radius:14px;font-size:14px;animation:pop .5s both;position:relative}
-  .in{align-self:flex-start;background:var(--in);border-bottom-left-radius:4px}
-  .out{align-self:flex-end;background:var(--out);border-bottom-right-radius:4px}
-  .msg b.t{display:block;margin-bottom:3px}
-  .msg .en{font-size:12.5px;margin-top:2px}
-  .out .en{color:#b9cde2}
-  .time{display:block;text-align:right;font-size:11px;color:var(--muted);margin-top:3px;font-family:sans-serif}
-  .out .time{color:#9fbad6}
-  .list{list-style:none;display:grid;gap:7px;margin-top:4px}
-  .list li{display:flex;gap:8px}
-  .list li i{font-style:normal;flex:0 0 auto}
-  .chart{display:flex;align-items:flex-end;gap:4px;height:54px;margin:8px 0 4px;padding:6px;background:rgba(0,0,0,.2);border-radius:8px}
-  .chart i{flex:1;border-radius:2px;background:var(--green)} .chart i.r{background:var(--red)}
-  @keyframes pop{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-
-  .sys{align-self:center;max-width:94%;background:rgba(251,191,36,.07);border:1px solid rgba(251,191,36,.25);
-       border-radius:12px;padding:10px 12px;font-size:11.5px;color:#b8c3d1;line-height:1.6}
-  .sys b{color:var(--warn)} .sys p+p{margin-top:6px}
-
-  /* Bottom join bar (in flow, not sticky) */
-  .joinbar{display:block;margin-top:10px;background:var(--bar);border-top:1px solid #0b1118;text-align:center;padding:15px;
-           color:var(--blue);font-weight:800;font-size:15px;text-decoration:none;letter-spacing:.6px;font-family:sans-serif}
-  .joinbar .en{display:inline;color:var(--blue);font-size:15px}
-
-  footer{text-align:center;font-size:11px;color:var(--muted);padding:12px 12px 18px;background:var(--bar);font-family:sans-serif}
-  footer a{color:var(--muted)}
-
-  /* Mobile: frame hata ke full-screen app look */
-  @media(max-width:480px){
-    body{padding:0;background:var(--app)}
-    .phone{max-width:none;border-radius:0;padding:0;box-shadow:none}
-    .island,.status{display:none}
-    .screen{border-radius:0;min-height:100vh}
-    .head{padding-top:calc(12px + env(safe-area-inset-top));position:sticky;top:0;z-index:4}
-  }
+  .disc{margin-top:20px;text-align:left;font-size:11.5px;color:#b1bccb;line-height:1.65;background:rgba(251,191,36,.06);
+        border:1px solid rgba(251,191,36,.25);border-radius:12px;padding:12px}
+  .disc b{color:var(--warn)} .disc p+p{margin-top:6px}
+  .foot{margin-top:14px;font-size:11px;color:var(--muted);font-family:sans-serif}
+  .foot a{color:var(--muted)}
 </style>
 </head>
 <body>
 
-<div class="phone">
-  <div class="island"></div>
-  <div class="screen">
+<main class="card">
+  <div class="logo"><img src="harish.jpg" alt="Harish Trading Academy" width="84" height="84" fetchpriority="high" onerror="this.remove()">HTA</div>
+  <div class="brand">Harish Trading Academy</div>
+  <span class="tag">📚 ಉಚಿತ ಕಲಿಕೆ • FREE LEARNING</span>
 
-    <div class="status"><span>9:41</span><span>●●● ▮</span></div>
-    <div class="head">
-      <span class="back">‹</span>
-      <div class="av"><img src="harish.jpg" alt="Harish Trading Academy" width="40" height="40" onerror="this.remove()">HTA</div>
-      <div><b>Harish Trading Academy</b><small>ಉಚಿತ ಕಲಿಕಾ ಚಾನೆಲ್ • free learning channel</small></div>
+  <h1>ಸ್ಟಾಕ್ ಮಾರ್ಕೆಟ್ ಅನ್ನು ಸರಳವಾಗಿ ಕಲಿಯಿರಿ
+    <span class="en">Learn the Stock Market, the Simple Way</span></h1>
+  <p class="sub">ಮೂಲಭೂತದಿಂದ ಹಂತ ಹಂತವಾಗಿ, ಕನ್ನಡದಲ್ಲಿ.
+    <span class="en">Step by step from the basics.</span></p>
+
+  <ul class="points">
+    <li><i>📈</i><div>ಚಾರ್ಟ್ ಓದುವ ಮೂಲಗಳು<span class="en">Chart reading basics</span></div></li>
+    <li><i>🛡️</i><div>ರಿಸ್ಕ್ ಮ್ಯಾನೇಜ್‌ಮೆಂಟ್ & ಸ್ಟಾಪ್-ಲಾಸ್<span class="en">Risk management & stop-loss</span></div></li>
+    <li><i>🧠</i><div>ಟ್ರೇಡಿಂಗ್ ಸೈಕಾಲಜಿ & ಶಿಸ್ತು<span class="en">Trading psychology & discipline</span></div></li>
+  </ul>
+
+  <a href="#" class="cta js-cta">ಉಚಿತವಾಗಿ ಸೇರಿ<small>JOIN FREE TELEGRAM CHANNEL</small></a>
+
+  <div class="timer js-timer-line">
+    <div class="ring">
+      <svg width="42" height="42" viewBox="0 0 42 42">
+        <circle class="bg" cx="21" cy="21" r="18" fill="none" stroke-width="4"/>
+        <circle class="fg js-ring" cx="21" cy="21" r="18" fill="none" stroke-width="4" stroke-dasharray="113.1" stroke-dashoffset="0"/>
+      </svg>
+      <b class="js-timer">8</b>
     </div>
-
-    <div class="chat">
-
-      <!-- PINNED JOIN CARD -->
-      <div class="pin">
-        <div class="av big"><img src="harish.jpg" alt="Harish Trading Academy" width="78" height="78" fetchpriority="high" onerror="this.remove()">HTA</div>
-        <h1>ಸ್ಟಾಕ್ ಮಾರ್ಕೆಟ್ ಅನ್ನು ಸರಳವಾಗಿ ಕಲಿಯಿರಿ
-          <span class="en">Learn the Stock Market, the Simple Way</span></h1>
-        <span class="tag">📚 100% ಉಚಿತ • 100% FREE</span>
-        <p>ಚಾರ್ಟ್‌ಗಳು, ಪ್ರೈಸ್ ಆಕ್ಷನ್ ಮತ್ತು ರಿಸ್ಕ್ ಮ್ಯಾನೇಜ್‌ಮೆಂಟ್ — ಮೂಲಭೂತದಿಂದ ಹಂತ ಹಂತವಾಗಿ, ಕನ್ನಡದಲ್ಲಿ.
-          <span class="en">Charts, price action & risk management — step by step from the basics.</span></p>
-
-        <a href="#" class="cta js-cta">ಉಚಿತವಾಗಿ ಸೇರಿ<small>JOIN FREE CHANNEL</small></a>
-
-        <div class="timer js-timer-line">
-          <div class="ring">
-            <svg width="44" height="44" viewBox="0 0 44 44">
-              <circle class="bg" cx="22" cy="22" r="19" fill="none" stroke-width="4"/>
-              <circle class="fg js-ring" cx="22" cy="22" r="19" fill="none" stroke-width="4" stroke-dasharray="119.4" stroke-dashoffset="0"/>
-            </svg>
-            <b class="js-timer">8</b>
-          </div>
-          <div>ಸೆಕೆಂಡುಗಳಲ್ಲಿ ಚಾನೆಲ್ ತೆರೆಯುತ್ತದೆ<span class="en">Channel opens automatically</span></div>
-        </div>
-        <p class="free">No payment • Leave anytime</p>
-      </div>
-
-      <span class="day">ಇಂದು • Today</span>
-
-      <!-- LESSON -->
-      <div class="msg in" style="animation-delay:.2s">
-        <b class="t">📊 ಇಂದಿನ ಪಾಠ • Today's Lesson</b>
-        Support & Resistance ಗುರುತಿಸುವುದು ಹೇಗೆ?<span class="en">How to spot support & resistance</span>
-        <div class="chart"><i style="height:35%"></i><i class="r" style="height:28%"></i><i style="height:48%"></i><i style="height:44%"></i><i class="r" style="height:36%"></i><i style="height:58%"></i><i style="height:70%"></i><i class="r" style="height:62%"></i><i style="height:82%"></i><i style="height:95%"></i></div>
-        <span class="time">9:15 AM</span>
-      </div>
-
-      <!-- WHAT YOU GET -->
-      <div class="msg out" style="animation-delay:.35s">ಚಾನೆಲ್‌ನಲ್ಲಿ ಏನು ಸಿಗುತ್ತದೆ?<span class="en">What will I get in the channel?</span><span class="time">9:20 AM ✓✓</span></div>
-      <div class="msg in" style="animation-delay:.5s">
-        <ul class="list">
-          <li><i>📈</i><div>ಚಾರ್ಟ್ ಓದುವ ಮೂಲಗಳು<span class="en">Chart reading basics</span></div></li>
-          <li><i>🛡️</i><div>ರಿಸ್ಕ್ ಮ್ಯಾನೇಜ್‌ಮೆಂಟ್ & ಸ್ಟಾಪ್-ಲಾಸ್<span class="en">Risk management & stop-loss</span></div></li>
-          <li><i>🕘</i><div>ಶೈಕ್ಷಣಿಕ ಮಾರ್ಕೆಟ್ ಅಪ್‌ಡೇಟ್‌ಗಳು<span class="en">Educational market updates</span></div></li>
-          <li><i>🧠</i><div>ಟ್ರೇಡಿಂಗ್ ಸೈಕಾಲಜಿ<span class="en">Trading psychology & discipline</span></div></li>
-        </ul>
-        <span class="time">9:21 AM</span>
-      </div>
-
-      <!-- WHO -->
-      <div class="msg out">ನನಗೆ ಮಾರ್ಕೆಟ್ ಬಗ್ಗೆ ಏನೂ ಗೊತ್ತಿಲ್ಲ, ಸೇರಬಹುದೇ?<span class="en">I'm a total beginner. Can I join?</span><span class="time">10:02 AM ✓✓</span></div>
-      <div class="msg in">ಖಂಡಿತ! ಆರಂಭಿಕರು, ವಿದ್ಯಾರ್ಥಿಗಳು, ಉದ್ಯೋಗಿಗಳು, ಉದ್ಯಮಿಗಳು — ಎಲ್ಲರಿಗೂ ಸರಳವಾಗಿ.
-        <span class="en">Absolutely! Made simple for beginners, students, professionals & business owners.</span><span class="time">10:03 AM</span></div>
-
-      <!-- FREE -->
-      <div class="msg out">ಇದು ನಿಜವಾಗಿಯೂ ಉಚಿತವೇ?<span class="en">Is it really free?</span><span class="time">10:10 AM ✓✓</span></div>
-      <div class="msg in">ಹೌದು, ಸೇರುವುದು ಸಂಪೂರ್ಣ ಉಚಿತ. 🙌<span class="en">Yes, joining is completely free.</span><span class="time">10:10 AM</span></div>
-
-      <!-- NO GUARANTEE -->
-      <div class="msg out">ಲಾಭದ ಗ್ಯಾರಂಟಿ ಇದೆಯೇ?<span class="en">Do you guarantee profits?</span><span class="time">10:15 AM ✓✓</span></div>
-      <div class="msg in">ಇಲ್ಲ. ಟ್ರೇಡಿಂಗ್‌ನಲ್ಲಿ ಅಪಾಯವಿದೆ. ನಮ್ಮ ಗಮನ ಶಿಕ್ಷಣದ ಮೇಲೆ ಮಾತ್ರ.
-        <span class="en">No. Trading involves risk — our focus is education only.</span><span class="time">10:16 AM</span></div>
-
-      <!-- HOW TO JOIN -->
-      <div class="msg in">
-        <b class="t">✅ ಸೇರುವುದು ಹೇಗೆ? • How to join</b>
-        <ul class="list">
-          <li><i>1️⃣</i><div>Join ಬಟನ್ ಒತ್ತಿ<span class="en">Tap the Join button</span></div></li>
-          <li><i>2️⃣</i><div>ಟೆಲಿಗ್ರಾಂ ಆಪ್ ತೆರೆಯುತ್ತದೆ<span class="en">Telegram app opens</span></div></li>
-          <li><i>3️⃣</i><div>"Join Channel" ಒತ್ತಿ — ಮುಗಿಯಿತು!<span class="en">Tap "Join Channel" — done!</span></div></li>
-        </ul>
-        <span class="time">10:20 AM</span>
-      </div>
-
-      <!-- DISCLAIMER -->
-      <div class="sys">
-        <p><b>ಹಕ್ಕು ನಿರಾಕರಣೆ:</b> ಎಲ್ಲಾ ವಿಷಯಗಳು ಶೈಕ್ಷಣಿಕ ಉದ್ದೇಶಕ್ಕಾಗಿ ಮಾತ್ರ. ಇದು ಹೂಡಿಕೆ ಸಲಹೆ ಅಥವಾ ಖರೀದಿ/ಮಾರಾಟ ಶಿಫಾರಸು ಅಲ್ಲ. ನಾವು SEBI ನೋಂದಾಯಿತ ಸಲಹೆಗಾರರಲ್ಲ. ಟ್ರೇಡಿಂಗ್‌ನಲ್ಲಿ ಹಣ ಕಳೆದುಕೊಳ್ಳುವ ಅಪಾಯವಿದೆ.</p>
-        <p><b>Disclaimer:</b> All content by Harish Trading Academy is for educational purposes only and is not investment advice or a buy/sell recommendation. We are not SEBI-registered advisors. Trading involves risk, including loss of capital. Past performance does not guarantee future results.</p>
-      </div>
-    </div>
-
-    <a href="#" class="joinbar js-cta">ಸೇರಿ • <span class="en">JOIN CHANNEL</span></a>
-
-    <footer>
-      © <span id="yr"></span> Harish Trading Academy<br>
-      <a href="#">Privacy Policy</a> • <a href="#">Terms</a> • <a href="#">Disclaimer</a><br>
-      This site is not a part of the Facebook website or Meta Platforms, Inc.
-    </footer>
+    <div>ಸೆಕೆಂಡುಗಳಲ್ಲಿ ಚಾನೆಲ್ ತೆರೆಯುತ್ತದೆ<span class="en">Channel opens automatically</span></div>
   </div>
-</div>
+  <p class="free">100% Free • No payment • Leave anytime</p>
+
+  <div class="disc">
+    <p><b>ಹಕ್ಕು ನಿರಾಕರಣೆ:</b> ಎಲ್ಲಾ ವಿಷಯಗಳು ಶೈಕ್ಷಣಿಕ ಉದ್ದೇಶಕ್ಕಾಗಿ ಮಾತ್ರ. ಇದು ಹೂಡಿಕೆ ಸಲಹೆ ಅಥವಾ ಖರೀದಿ/ಮಾರಾಟ ಶಿಫಾರಸು ಅಲ್ಲ. ನಾವು SEBI ನೋಂದಾಯಿತ ಸಲಹೆಗಾರರಲ್ಲ. ಟ್ರೇಡಿಂಗ್‌ನಲ್ಲಿ ಹಣ ಕಳೆದುಕೊಳ್ಳುವ ಅಪಾಯವಿದೆ.</p>
+    <p><b>Disclaimer:</b> All content is for educational purposes only and is not investment advice or a buy/sell recommendation. We are not SEBI-registered advisors. Trading involves risk, including loss of capital. Past performance does not guarantee future results.</p>
+  </div>
+
+  <div class="foot">
+    © <span id="yr"></span> Harish Trading Academy • <a href="#">Privacy Policy</a> • <a href="#">Terms</a><br>
+    This site is not a part of the Facebook website or Meta Platforms, Inc.
+  </div>
+</main>
 
 <script>
 (function () {
@@ -237,7 +128,7 @@ src="https://www.facebook.com/tr?id=1097986969393824&ev=PageView&noscript=1"
   var RETURN_DELAY_MS = 300;
   // ============================================
 
-  var KEY_VISITED = "hta_visited", KEY_LEAD = "hta_lead";
+  var KEY_VISITED = "hta_visited", KEY_EVT = "hta_sub";
   var loadTime = Date.now();
   document.getElementById("yr").textContent = new Date().getFullYear();
 
@@ -251,32 +142,30 @@ src="https://www.facebook.com/tr?id=1097986969393824&ev=PageView&noscript=1"
   }
   function goTelegram(){ setFlag(KEY_VISITED); window.location.href = TG_LINK; }
 
-  // Lead: sirf asli click, sirf ek baar, bot filter
-  function fireLeadOnce(){
-    if (hasFlag(KEY_LEAD)) return;
+  // Subscribe: sirf asli click, sirf ek baar, bot filter
+  function fireEventOnce(){
+    if (hasFlag(KEY_EVT)) return;
     if (navigator.webdriver) return;
     if (Date.now() - loadTime < 800) return;
     if (typeof fbq === "function") fbq("track","Subscribe",{},{eventID:"hta_sub_"+loadTime});
-    setFlag(KEY_LEAD);
+    setFlag(KEY_EVT);
   }
 
-  var ctas = document.querySelectorAll(".js-cta");
+  var cta = document.querySelector(".js-cta");
   var timerLine = document.querySelector(".js-timer-line");
   var timerEl = document.querySelector(".js-timer");
   var ring = document.querySelector(".js-ring");
-  var C = 119.4, countdown;
+  var C = 113.1, countdown;
 
-  for (var i=0;i<ctas.length;i++){
-    ctas[i].href = TG_LINK;
-    ctas[i].addEventListener("click", function(e){
-      e.preventDefault();
-      if (countdown) clearInterval(countdown);
-      fireLeadOnce();
-      setTimeout(goTelegram, 300);
-    });
-  }
+  cta.href = TG_LINK;
+  cta.addEventListener("click", function(e){
+    e.preventDefault();
+    if (countdown) clearInterval(countdown);
+    fireEventOnce();
+    setTimeout(goTelegram, 300);
+  });
 
-  // Returning visitor: turant Telegram, Lead nahi
+  // Returning visitor: turant Telegram, event nahi
   if (hasFlag(KEY_VISITED)) {
     timerLine.innerHTML = "<div>ಚಾನೆಲ್ ತೆರೆಯುತ್ತಿದೆ…<span class='en'>Opening channel…</span></div>";
     setTimeout(goTelegram, RETURN_DELAY_MS);
