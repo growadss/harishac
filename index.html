@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="kn">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Harish Trading Academy | Free Learning Channel</title>
-<meta name="description" content="Learn stock market basics in Kannada & English. Educational content only.">
+<meta name="description" content="Learn stock market basics in Kannada and English. Educational content only.">
 <meta name="theme-color" content="#0e1621">
 
 <!-- Meta Pixel Code -->
@@ -15,175 +16,697 @@ n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
 n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
+s.parentNode.insertBefore(t,s)}(window,document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1097986969393824');
-fbq('track', 'PageView');
+
+fbq('init','1097986969393824');
+fbq('track','PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
+<noscript>
+<img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1097986969393824&ev=PageView&noscript=1"
-/></noscript>
+alt="">
+</noscript>
 <!-- End Meta Pixel Code -->
 
 <style>
-  :root{--bg:#0e1621;--card:#17212b;--line:#24344a;--text:#e9eef4;--muted:#8b9bb0;--blue:#3a9fe8;--blue2:#2b8ad1;--green:#22c55e;--warn:#fbbf24}
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:"Noto Sans Kannada","Tunga",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-       background:var(--bg);color:var(--text);line-height:1.55;-webkit-font-smoothing:antialiased;
-       min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px 16px;
-       background-image:radial-gradient(600px 350px at 50% 0,rgba(58,159,232,.2),transparent);background-repeat:no-repeat}
-  .en{display:block;color:var(--muted);font-size:.85em;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+:root{
+  --bg:#0e1621;
+  --card:#17212b;
+  --line:#24344a;
+  --text:#e9eef4;
+  --muted:#9cabbc;
+  --blue:#3a9fe8;
+  --blue2:#2b8ad1;
+  --green:#22c55e;
+  --warn:#fbbf24;
+}
 
-  .card{width:100%;max-width:420px;background:var(--card);border:1px solid var(--line);border-radius:22px;
-        padding:26px 20px;text-align:center;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
 
-  .logo{width:84px;height:84px;margin:0 auto 12px;border-radius:50%;position:relative;overflow:hidden;
-        background:linear-gradient(135deg,var(--green),var(--blue));display:grid;place-items:center;
-        font-weight:800;font-size:24px;color:#fff;box-shadow:0 0 0 4px rgba(58,159,232,.22);font-family:sans-serif}
-  .logo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-  .brand{font-weight:800;font-size:15px;font-family:sans-serif}
-  .tag{display:inline-block;margin:10px 0 16px;font-size:12px;font-weight:700;color:var(--green);
-       background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.3);padding:4px 11px;border-radius:999px}
+html{
+  min-height:100%;
+}
 
-  h1{font-size:22px;line-height:1.35}
-  h1 .en{font-size:15px;color:#cfd8e3;margin-top:3px;font-weight:700}
-  .sub{margin-top:10px;font-size:14px;color:#cfd8e3}
-  .sub .en{font-size:13px;margin-top:3px}
+body{
+  min-height:100vh;
+  min-height:100dvh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:14px 12px;
+  font-family:"Noto Sans Kannada","Tunga",
+    -apple-system,BlinkMacSystemFont,
+    "Segoe UI",Roboto,sans-serif;
+  color:var(--text);
+  line-height:1.45;
+  -webkit-font-smoothing:antialiased;
+  background:
+    radial-gradient(
+      600px 350px at 50% 0%,
+      rgba(58,159,232,.20),
+      transparent
+    ),
+    var(--bg);
+}
 
-  .points{list-style:none;text-align:left;display:grid;gap:9px;margin:18px 0 4px}
-  .points li{display:flex;gap:10px;background:rgba(0,0,0,.18);border:1px solid var(--line);border-radius:12px;padding:10px 12px;font-size:14px}
-  .points li i{font-style:normal}
-  .points .en{font-size:12.5px}
+.en{
+  display:block;
+  color:var(--muted);
+  font-size:.85em;
+  font-family:-apple-system,BlinkMacSystemFont,
+    "Segoe UI",Roboto,sans-serif;
+}
 
-  .cta{display:flex;flex-direction:column;align-items:center;width:100%;margin-top:18px;background:var(--blue);color:#fff;
-       text-decoration:none;border-radius:14px;padding:14px;font-weight:800;font-size:18px;
-       box-shadow:0 8px 22px rgba(58,159,232,.4);animation:pulse 2s infinite;transition:transform .15s}
-  .cta:active{transform:scale(.97)} .cta:hover{background:var(--blue2)}
-  .cta small{font-size:12px;opacity:.9;letter-spacing:.5px;font-family:sans-serif}
-  @keyframes pulse{0%,100%{box-shadow:0 8px 22px rgba(58,159,232,.35)}50%{box-shadow:0 8px 34px rgba(58,159,232,.8)}}
+.card{
+  width:100%;
+  max-width:420px;
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:20px 18px;
+  text-align:center;
+  box-shadow:0 20px 50px rgba(0,0,0,.4);
+}
 
-  .timer{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:14px;font-size:13px;color:#cfd8e3;text-align:left}
-  .ring{width:42px;height:42px;position:relative;flex:0 0 auto}
-  .ring svg{transform:rotate(-90deg)}
-  .ring .bg{stroke:#24344a} .ring .fg{stroke:var(--warn);stroke-linecap:round;transition:stroke-dashoffset 1s linear}
-  .ring b{position:absolute;inset:0;display:grid;place-items:center;font-size:15px;color:var(--warn);font-family:sans-serif}
-  .free{margin-top:8px;font-size:12px;color:var(--muted);font-family:sans-serif}
+.logo{
+  width:76px;
+  height:76px;
+  margin:0 auto 10px;
+  border-radius:50%;
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(
+    135deg,var(--green),var(--blue)
+  );
+  display:grid;
+  place-items:center;
+  font-weight:800;
+  font-size:23px;
+  color:#fff;
+  box-shadow:0 0 0 4px rgba(58,159,232,.22);
+  font-family:sans-serif;
+}
 
-  .disc{margin-top:20px;text-align:left;font-size:11.5px;color:#b1bccb;line-height:1.65;background:rgba(251,191,36,.06);
-        border:1px solid rgba(251,191,36,.25);border-radius:12px;padding:12px}
-  .disc b{color:var(--warn)} .disc p+p{margin-top:6px}
-  .foot{margin-top:14px;font-size:11px;color:var(--muted);font-family:sans-serif}
-  .foot a{color:var(--muted)}
+.logo img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.brand{
+  font-weight:800;
+  font-size:15px;
+  font-family:sans-serif;
+}
+
+.tag{
+  display:inline-block;
+  margin:9px 0 13px;
+  font-size:11px;
+  font-weight:700;
+  color:var(--green);
+  background:rgba(34,197,94,.12);
+  border:1px solid rgba(34,197,94,.3);
+  padding:4px 10px;
+  border-radius:999px;
+}
+
+h1{
+  font-size:21px;
+  line-height:1.35;
+}
+
+h1 .en{
+  font-size:14px;
+  color:#cfd8e3;
+  margin-top:3px;
+  font-weight:700;
+}
+
+.sub{
+  margin-top:8px;
+  font-size:13px;
+  color:#cfd8e3;
+}
+
+.sub .en{
+  font-size:12px;
+  margin-top:3px;
+}
+
+.points{
+  list-style:none;
+  text-align:left;
+  display:grid;
+  gap:7px;
+  margin:14px 0 3px;
+}
+
+.points li{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:rgba(0,0,0,.18);
+  border:1px solid var(--line);
+  border-radius:11px;
+  padding:8px 11px;
+  font-size:13px;
+}
+
+.points li i{
+  font-style:normal;
+  font-size:17px;
+  flex-shrink:0;
+}
+
+.points .en{
+  font-size:12px;
+  margin-top:1px;
+}
+
+.cta{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  margin-top:15px;
+  background:var(--blue);
+  color:#fff;
+  text-decoration:none;
+  border-radius:13px;
+  padding:12px;
+  font-weight:800;
+  font-size:17px;
+  box-shadow:0 7px 22px rgba(58,159,232,.4);
+  animation:pulse 2s infinite;
+  transition:background .2s;
+  cursor:pointer;
+}
+
+.cta:hover{
+  background:var(--blue2);
+}
+
+.cta:focus-visible{
+  outline:3px solid #fff;
+  outline-offset:3px;
+}
+
+.cta small{
+  font-size:11px;
+  opacity:.95;
+  letter-spacing:.4px;
+  font-family:sans-serif;
+}
+
+@keyframes pulse{
+  0%,100%{
+    box-shadow:0 7px 20px rgba(58,159,232,.35);
+  }
+  50%{
+    box-shadow:0 7px 32px rgba(58,159,232,.75);
+  }
+}
+
+.timer{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  margin-top:10px;
+  font-size:12px;
+  color:#cfd8e3;
+  text-align:left;
+}
+
+.ring{
+  width:38px;
+  height:38px;
+  position:relative;
+  flex:0 0 auto;
+}
+
+.ring svg{
+  width:38px;
+  height:38px;
+  transform:rotate(-90deg);
+}
+
+.ring .bg{
+  stroke:#24344a;
+}
+
+.ring .fg{
+  stroke:var(--warn);
+  stroke-linecap:round;
+  transition:stroke-dashoffset .3s linear;
+}
+
+.ring b{
+  position:absolute;
+  inset:0;
+  display:grid;
+  place-items:center;
+  font-size:14px;
+  color:var(--warn);
+  font-family:sans-serif;
+}
+
+.free{
+  margin-top:7px;
+  font-size:11px;
+  color:var(--muted);
+  font-family:sans-serif;
+}
+
+.disc{
+  margin-top:14px;
+  text-align:left;
+  font-size:10.5px;
+  color:#b1bccb;
+  line-height:1.55;
+  background:rgba(251,191,36,.06);
+  border:1px solid rgba(251,191,36,.25);
+  border-radius:11px;
+  padding:10px;
+}
+
+.disc b{
+  color:var(--warn);
+}
+
+.disc p+p{
+  margin-top:6px;
+}
+
+.foot{
+  margin-top:11px;
+  font-size:10px;
+  color:var(--muted);
+  font-family:sans-serif;
+  line-height:1.6;
+}
+
+.foot a{
+  color:var(--muted);
+}
+
+@media(max-width:360px){
+  body{
+    padding:8px;
+  }
+
+  .card{
+    padding:14px 12px;
+    border-radius:16px;
+  }
+
+  .logo{
+    width:62px;
+    height:62px;
+    font-size:20px;
+  }
+
+  h1{
+    font-size:18px;
+  }
+
+  .points li{
+    padding:7px 9px;
+  }
+
+  .cta{
+    padding:10px;
+  }
+
+  .disc{
+    font-size:10px;
+  }
+}
+
+@media(max-height:740px){
+  body{
+    align-items:flex-start;
+  }
+
+  .card{
+    margin:auto 0;
+  }
+
+  .logo{
+    width:64px;
+    height:64px;
+  }
+
+  .tag{
+    margin:6px 0 9px;
+  }
+
+  .points{
+    gap:5px;
+    margin-top:10px;
+  }
+
+  .cta{
+    margin-top:11px;
+  }
+
+  .disc{
+    margin-top:10px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  .cta{
+    animation:none;
+  }
+
+  .ring .fg{
+    transition:none;
+  }
+}
 </style>
 </head>
+
 <body>
 
 <main class="card">
-  <div class="logo"><img src="harish.jpg" alt="Harish Trading Academy" width="84" height="84" fetchpriority="high" onerror="this.remove()">HTA</div>
-  <div class="brand">Harish Trading Academy</div>
-  <span class="tag">📚 ಉಚಿತ ಕಲಿಕೆ • FREE LEARNING</span>
 
-  <h1>ಸ್ಟಾಕ್ ಮಾರ್ಕೆಟ್ ಅನ್ನು ಸರಳವಾಗಿ ಕಲಿಯಿರಿ
-    <span class="en">Learn the Stock Market, the Simple Way</span></h1>
-  <p class="sub">ಮೂಲಭೂತದಿಂದ ಹಂತ ಹಂತವಾಗಿ, ಕನ್ನಡದಲ್ಲಿ.
-    <span class="en">Step by step from the basics.</span></p>
+  <div class="logo">
+    <img
+      src="harish.jpg"
+      alt="Harish Trading Academy"
+      width="76"
+      height="76"
+      fetchpriority="high"
+      onerror="this.remove()"
+    >
+    HTA
+  </div>
+
+  <div class="brand">
+    Harish Trading Academy
+  </div>
+
+  <span class="tag">
+    📚 ಉಚಿತ ಕಲಿಕೆ • FREE LEARNING
+  </span>
+
+  <h1>
+    ಸ್ಟಾಕ್ ಮಾರ್ಕೆಟ್ ಅನ್ನು ಸರಳವಾಗಿ ಕಲಿಯಿರಿ
+    <span class="en">
+      Learn the Stock Market, the Simple Way
+    </span>
+  </h1>
+
+  <p class="sub">
+    ಮೂಲಭೂತದಿಂದ ಹಂತ ಹಂತವಾಗಿ, ಕನ್ನಡದಲ್ಲಿ.
+    <span class="en">
+      Step by step from the basics.
+    </span>
+  </p>
 
   <ul class="points">
-    <li><i>📈</i><div>ಚಾರ್ಟ್ ಓದುವ ಮೂಲಗಳು<span class="en">Chart reading basics</span></div></li>
-    <li><i>🛡️</i><div>ರಿಸ್ಕ್ ಮ್ಯಾನೇಜ್‌ಮೆಂಟ್ & ಸ್ಟಾಪ್-ಲಾಸ್<span class="en">Risk management & stop-loss</span></div></li>
-    <li><i>🧠</i><div>ಟ್ರೇಡಿಂಗ್ ಸೈಕಾಲಜಿ & ಶಿಸ್ತು<span class="en">Trading psychology & discipline</span></div></li>
+
+    <li>
+      <i>📈</i>
+      <div>
+        ಚಾರ್ಟ್ ಓದುವ ಮೂಲಗಳು
+        <span class="en">
+          Chart reading basics
+        </span>
+      </div>
+    </li>
+
+    <li>
+      <i>🛡️</i>
+      <div>
+        ರಿಸ್ಕ್ ಮ್ಯಾನೇಜ್‌ಮೆಂಟ್ & ಸ್ಟಾಪ್-ಲಾಸ್
+        <span class="en">
+          Risk management & stop-loss
+        </span>
+      </div>
+    </li>
+
+    <li>
+      <i>🧠</i>
+      <div>
+        ಟ್ರೇಡಿಂಗ್ ಸೈಕಾಲಜಿ & ಶಿಸ್ತು
+        <span class="en">
+          Trading psychology & discipline
+        </span>
+      </div>
+    </li>
+
   </ul>
 
-  <a href="#" class="cta js-cta">ಉಚಿತವಾಗಿ ಸೇರಿ<small>JOIN FREE TELEGRAM CHANNEL</small></a>
+  <a
+    href="https://t.me/+RPiFcVOZPbMxYjll"
+    class="cta js-cta"
+  >
+    ಉಚಿತವಾಗಿ ಸೇರಿ
+    <small>JOIN FREE TELEGRAM CHANNEL</small>
+  </a>
 
   <div class="timer js-timer-line">
+
     <div class="ring">
-      <svg width="42" height="42" viewBox="0 0 42 42">
-        <circle class="bg" cx="21" cy="21" r="18" fill="none" stroke-width="4"/>
-        <circle class="fg js-ring" cx="21" cy="21" r="18" fill="none" stroke-width="4" stroke-dasharray="113.1" stroke-dashoffset="0"/>
+
+      <svg viewBox="0 0 42 42"
+           aria-hidden="true">
+
+        <circle
+          class="bg"
+          cx="21"
+          cy="21"
+          r="18"
+          fill="none"
+          stroke-width="4"
+        />
+
+        <circle
+          class="fg js-ring"
+          cx="21"
+          cy="21"
+          r="18"
+          fill="none"
+          stroke-width="4"
+          stroke-dasharray="113.1"
+          stroke-dashoffset="0"
+        />
+
       </svg>
+
       <b class="js-timer">8</b>
+
     </div>
-    <div>ಸೆಕೆಂಡುಗಳಲ್ಲಿ ಚಾನೆಲ್ ತೆರೆಯುತ್ತದೆ<span class="en">Channel opens automatically</span></div>
+
+    <div>
+      ಸೆಕೆಂಡುಗಳಲ್ಲಿ ಚಾನೆಲ್ ತೆರೆಯುತ್ತದೆ
+      <span class="en">
+        Channel opens automatically
+      </span>
+    </div>
+
   </div>
-  <p class="free">100% Free • No payment • Leave anytime</p>
+
+  <p class="free">
+    100% Free • No payment • Leave anytime
+  </p>
 
   <div class="disc">
-    <p><b>ಹಕ್ಕು ನಿರಾಕರಣೆ:</b> ಎಲ್ಲಾ ವಿಷಯಗಳು ಶೈಕ್ಷಣಿಕ ಉದ್ದೇಶಕ್ಕಾಗಿ ಮಾತ್ರ. ಇದು ಹೂಡಿಕೆ ಸಲಹೆ ಅಥವಾ ಖರೀದಿ/ಮಾರಾಟ ಶಿಫಾರಸು ಅಲ್ಲ. ನಾವು SEBI ನೋಂದಾಯಿತ ಸಲಹೆಗಾರರಲ್ಲ. ಟ್ರೇಡಿಂಗ್‌ನಲ್ಲಿ ಹಣ ಕಳೆದುಕೊಳ್ಳುವ ಅಪಾಯವಿದೆ.</p>
-    <p><b>Disclaimer:</b> All content is for educational purposes only and is not investment advice or a buy/sell recommendation. We are not SEBI-registered advisors. Trading involves risk, including loss of capital. Past performance does not guarantee future results.</p>
+
+    <p>
+      <b>ಹಕ್ಕು ನಿರಾಕರಣೆ:</b>
+      ಎಲ್ಲಾ ವಿಷಯಗಳು ಶೈಕ್ಷಣಿಕ ಉದ್ದೇಶಕ್ಕಾಗಿ ಮಾತ್ರ.
+      ಇದು ಹೂಡಿಕೆ ಸಲಹೆ ಅಥವಾ ಖರೀದಿ/ಮಾರಾಟ
+      ಶಿಫಾರಸು ಅಲ್ಲ. ನಾವು SEBI ನೋಂದಾಯಿತ
+      ಸಲಹೆಗಾರರಲ್ಲ. ಟ್ರೇಡಿಂಗ್‌ನಲ್ಲಿ ಹಣ
+      ಕಳೆದುಕೊಳ್ಳುವ ಅಪಾಯವಿದೆ.
+    </p>
+
+    <p>
+      <b>Disclaimer:</b>
+      All content is for educational purposes
+      only and is not investment advice or a
+      buy/sell recommendation. We are not
+      SEBI-registered advisors. Trading involves
+      risk, including loss of capital.
+      Past performance does not guarantee
+      future results.
+    </p>
+
   </div>
 
   <div class="foot">
-    © <span id="yr"></span> Harish Trading Academy • <a href="#">Privacy Policy</a> • <a href="#">Terms</a><br>
-    This site is not a part of the Facebook website or Meta Platforms, Inc.
+    © <span id="yr"></span>
+    Harish Trading Academy
+    <br>
+    This site is not a part of the Facebook
+    website or Meta Platforms, Inc.
   </div>
+
 </main>
 
 <script>
-(function () {
-  // ================= SETTINGS =================
-  var TG_LINK = "https://t.me/+RPiFcVOZPbMxYjll";
-  var AUTO_REDIRECT = true;   // false = sirf button se khulega
+(function(){
+
+  // ============ SETTINGS ============
+
+  var TG_LINK =
+    "https://t.me/+RPiFcVOZPbMxYjll";
+
+  var AUTO_REDIRECT = true;
+
   var TIMER_SECONDS = 8;
-  var RETURN_DELAY_MS = 300;
-  // ============================================
 
-  var KEY_VISITED = "hta_visited", KEY_EVT = "hta_sub";
-  var loadTime = Date.now();
-  document.getElementById("yr").textContent = new Date().getFullYear();
+  // ==================================
 
-  function setFlag(k){
-    try{localStorage.setItem(k,"1")}catch(e){}
-    document.cookie = k+"=1; max-age="+(60*60*24*180)+"; path=/; SameSite=Lax";
-  }
-  function hasFlag(k){
-    try{ if(localStorage.getItem(k)) return true }catch(e){}
-    return document.cookie.indexOf(k+"=1") !== -1;
-  }
-  function goTelegram(){ setFlag(KEY_VISITED); window.location.href = TG_LINK; }
+  var cta =
+    document.querySelector(".js-cta");
 
-  // Subscribe: sirf asli click, sirf ek baar, bot filter
-  function fireEventOnce(){
-    if (hasFlag(KEY_EVT)) return;
-    if (navigator.webdriver) return;
-    if (Date.now() - loadTime < 800) return;
-    if (typeof fbq === "function") fbq("track","Subscribe",{},{eventID:"hta_sub_"+loadTime});
-    setFlag(KEY_EVT);
-  }
+  var timerLine =
+    document.querySelector(".js-timer-line");
 
-  var cta = document.querySelector(".js-cta");
-  var timerLine = document.querySelector(".js-timer-line");
-  var timerEl = document.querySelector(".js-timer");
-  var ring = document.querySelector(".js-ring");
-  var C = 113.1, countdown;
+  var timerEl =
+    document.querySelector(".js-timer");
+
+  var ring =
+    document.querySelector(".js-ring");
+
+  var yearEl =
+    document.getElementById("yr");
+
+  var C = 113.1;
+
+  var countdown = null;
+
+  var left = TIMER_SECONDS;
+
+  var redirected = false;
+
+  yearEl.textContent =
+    new Date().getFullYear();
 
   cta.href = TG_LINK;
-  cta.addEventListener("click", function(e){
-    e.preventDefault();
-    if (countdown) clearInterval(countdown);
-    fireEventOnce();
-    setTimeout(goTelegram, 300);
+
+  // ========== META EVENTS ==========
+
+  function trackEvent(type,name){
+
+    if(typeof window.fbq !== "function"){
+      return;
+    }
+
+    try{
+
+      if(type === "standard"){
+
+        fbq("track",name);
+
+      }else{
+
+        fbq("trackCustom",name);
+
+      }
+
+    }catch(error){
+
+      // Tracking failure must not
+      // prevent navigation.
+
+    }
+
+  }
+
+  // ========== CTA CLICK ==========
+
+  cta.addEventListener("click",function(){
+
+    // Stop automatic countdown.
+    if(countdown !== null){
+      clearInterval(countdown);
+      countdown = null;
+    }
+
+    // Standard Meta event.
+    trackEvent("standard","Subscribe");
+
+    // Separate custom Meta event.
+    trackEvent("custom","CTA_Click");
+
+    // Normal anchor navigation.
+    // No artificial delay.
+    // No click blocking.
+    // No one-time localStorage lock.
+
   });
 
-  // Returning visitor: turant Telegram, event nahi
-  if (hasFlag(KEY_VISITED)) {
-    timerLine.innerHTML = "<div>ಚಾನೆಲ್ ತೆರೆಯುತ್ತಿದೆ…<span class='en'>Opening channel…</span></div>";
-    setTimeout(goTelegram, RETURN_DELAY_MS);
-    return;
+  // ========== COUNTDOWN ==========
+
+  function paint(){
+
+    timerEl.textContent = left;
+
+    var progress =
+      1 - (left / TIMER_SECONDS);
+
+    ring.style.strokeDashoffset =
+      (C * progress).toFixed(1);
+
   }
 
-  if (!AUTO_REDIRECT) { timerLine.style.display = "none"; return; }
-  var left = TIMER_SECONDS;
-  function paint(){
-    timerEl.textContent = left;
-    ring.style.strokeDashoffset = (C * (1 - left / TIMER_SECONDS)).toFixed(1);
+  function autoRedirect(){
+
+    if(redirected){
+      return;
+    }
+
+    redirected = true;
+
+    // Only custom event on timer.
+    trackEvent("custom","AutoRedirect");
+
+    window.location.assign(TG_LINK);
+
   }
+
+  if(!AUTO_REDIRECT){
+
+    timerLine.style.display = "none";
+    return;
+
+  }
+
   paint();
+
   countdown = setInterval(function(){
-    left--; paint();
-    if (left <= 0){ clearInterval(countdown); goTelegram(); }
-  }, 1000);
+
+    left = Math.max(0,left - 1);
+
+    paint();
+
+    if(left <= 0){
+
+      clearInterval(countdown);
+      countdown = null;
+
+      autoRedirect();
+
+    }
+
+  },1000);
+
 })();
 </script>
+
 </body>
 </html>
